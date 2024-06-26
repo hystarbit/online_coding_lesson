@@ -1,0 +1,46 @@
+TypeScript
+= JavaScript + Type문법
+"JavaScript Superset"
+
+5-'3'
+
+원래는 숫자-숫자만 가능하지만
+JS가 알아서 숫자로 바꿔줌 개꿀
+(프로젝트 크면 단점일 뿐)
+
+코드 길게 짤 땐
+자유도 & 유연성은 오히려 쓰레기임
+
+TypeScript는 타입 엄격히 검사해줌
+TS error: "문자랑 숫자빼는거 이상한데요 빨리 수정하셈"
+
+나는 JavaScript로 충분한 것 같소
+나는 똑똑하다
+(협업이나 기존코드 뜯어고칠 생각 해보셈)
+
+TypeScript는 에러메세지 퀄리티가 오짐
+
+var counter = 0;
+counter '1';
+TS에러: "멍청아 숫자넣어야지 왜 문자넣음"
+TS에러: "토익 300점이냐 apend 아니고 append임"
+
+TypeScript는
+그냥 코드 에디터 부가기능 역할로 봐도 될듯
+
+TypeScript 설치는
+(여기선 그냥 static 웹페이지 개발시를 가정할 것임)
+React/Vue이용시 TS 설치는 강의하단 참고
+
+1. node js설치 (최신버전 제발)
+2. VScode 에디터 준비
+3. 터미널오픈 후 npm install -g typescript
+4. 코드짤 폴더 만들고 에디터로 오픈
+5. 어쩌구.ts 파일 생성후 코드짜셈
+6. tsconfig.json생성 후 내용 작성
+
+터미널 켜셔 tsc-w 입력해두면 자동변환됨
+파일 사용시 당연히 변환돈 js 파일쓰셈
+
+tsconfig.json은
+ts -> js 컴파일시 옵션설정 가능

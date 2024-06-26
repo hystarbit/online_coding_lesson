@@ -1,0 +1,49 @@
+github1
+git push, pull 알아도 자신이 없다면
+원격 repository 개념부터 알고있어야합니다
+
+git 얘 뭐임?
+파일버전 기록해주는 프로그램임
+git이 파일 기록해두는 장소: repository(원격저장소)
+온라인 repository 만들면
+1. 컴퓨터 고장나도 안심
+2. 협업가능
+
+원격저장소를 만들어봅시다
+github.com 들어가쇼
+이상판파일 추가금지
+
+로컬저장소를 원격저장소에 백업해보자
+
+git init
+repository 생성해줌
+
+github.com은 기본브랜치 이름을 main으로 강요함
+git branch -M main
+
+로컬저장소 완성
+
+로컬 -> 원격저장소 업로드는
+git push -u 원격저장소주소 올릴로컬브랜치명
+git push -u https://github.com/hystarbit/lesson.git main
+
+(git pull부터 하라고 하면
+git pull부터 입력해보세요)
+
+git에서 변수문법 사용가능
+git remote add 변수명 주소~~
+git remote add origin https://github.com/hystarbit/lesson.git
+
+git push -u origin main
+git push할 때 -u추가하면 주소 기억하라는 뜻
+
+git push
+
+원격저장소에 있던거 그대로 내려받기
+git clone https://원격저장소주소
+
+저장소에 올리지 않는 파일들은 .gitignore
+
+잠은 보약이다~
+
+잘자~

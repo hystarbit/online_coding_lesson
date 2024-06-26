@@ -1,0 +1,61 @@
+쉽게 설명하는 Git 기초 1. add, commit
+Q. 2일전코드로 되돌아가려면?
+직접 매일 백업해두거나
+버전관리 소프트웨어 쓰거나
+작업한 코드들 기록, 보관가능
+
+- 과거로 빠꾸가능
+-과거 작업내용 연람가능
+등 안정적인 개발가능
+
+윈도우는 git windows버전 다운 다운받아서 설치하면 끝
+
+맥북은 강의하단 글 참고
+1. homebrew 검색해서 설치
+2. 런치패드-터미널-brew install git 입력
+3. 기본브랜치 이름 main으로 바꾸기
+4. 기본에디터 VSCode로 바꾸기...
+
+이 컴퓨터에서 git처음 쓴다면 이름 등록부터
+
+git config --global user.email "홍길동@naver.com"
+git config --global user.email "sun041409@naver.com"
+
+git config --global user.name "홍길동"
+git config --global user.name "hystarbit"
+차례로 입력
+
+파일 현재상태 기록해두려면
+git add 파일명
+
+쓸데없는 사진.jpg
+1. git add로 기록할 파일부터 고르고
+2. 고른 파일 기록명령은 git commit
+
+작업폴더 -git add-> staging area -git commit-> repository(저장소)
+
+이쉑 스테이징함 ㅋㅋㅋㅋㅋ
+(commit할 파일 골라놨다는 뜻)
+
+git add & commit 동시에 해주는 명령어도 있음
+(안알려줌)
+
+1. 여러 파일 스테이징하려면
+git add 파일1 파일2...
+2. 모든 파일 스테이징하려면
+git add .
+
+그래서 미친놈처럼 크게 상태창 5번 외침
+상태창!! 상태창!!
+
+3. 상태창열기
+git status
+
+4. commit 내역 조회
+git log --all --oneline
+
+오늘의 숙제:
+새로운 작업폴더에서 commit 5번 해오쇼
+
+(참고)
+commit 3초마다 하는거 아님

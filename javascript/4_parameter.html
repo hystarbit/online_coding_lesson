@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="alert-box" id="alert">
+        <p>Alert 박스</p>
+        <button onclick="알림창열기('none')">닫기</button>
+    </div>
+    <button onclick="알림창열기('block')">버튼</button>
+    <br>
+    <br>
+    <div class="alert-box" id="alert2">
+        <p>아이디를 입력안하셨어요 </p>
+        <button onclick="알림창열기('none','alert2')">닫기</button>
+    </div>
+    <button onclick="알림창열기('block','alert2')">버튼1</button>
+
+    <div class="alert-box" id="alert3">
+        <p>비번을 입력 안하셨어요</p>
+        <button onclick="알림창열기('none','alert3')">닫기</button>
+    </div>
+    <button onclick="알림창열기('block','alert3')">버튼2</button>
+    <script>
+        
+
+        function 알림창열기(구멍) {
+            document.getElementById('alert').style.display = 구멍;
+        }
+
+        // function plus(){
+        //     2 + 1
+        // }
+        // function plus2(){
+        //     2 + 2
+        // }
+        // function plus3(){
+        //     2 + 3
+        // }
+
+        // function plus(구멍){
+        //     2 + 구멍
+        // }
+
+        // plus(1);
+        // plus(2);
+        // plus(3);
+
+        function 알림창열기(구멍, 구멍2){
+             document.getElementById(구멍2).style.display = 구멍;
+        }
+        //알림창열기('ㅇㅇㅇ','ㅇㄹㄴㅇㄹ');
+
+        
+    </script>
+</body>
+</html>

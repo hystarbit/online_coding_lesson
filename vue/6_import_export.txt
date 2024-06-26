@@ -1,0 +1,44 @@
+Vue 6강 : 상품목록 만들기 진짜 데이터로 (import / export)
+6. Import export
+저번시간 숙제:
+모달창 닫기버튼과 기능
+
+강의하단에 상품데이터 준비해옴
+이걸 데이터로 저장하자 (근데 넘 길어)
+
+다른 파일에 넣은 후 
+불러오는 식으로 하면 편함
+import하면 편함
+
+긴 데이터 담을 파일 만들기
+assets안에 oneroom.js 만들었다
+
+import / export 문법 쓰는 법
+1. export default 변수명
+2. Import 변수명 from 그파일경로
+
+import / export 문법 쓰는 법
+1. export {변수1, 변수2..}
+2. Import{변수 1} from 경로
+
+첨부한 데이터를 외부 js파일에 복붙
+
+실제데이터를 상품목록에 박아넣자
+
+import data from './assets/oneroom.js';
+
+원룸들 : data
+
+
+원룸들[0].title 
+원룸들[0].price
+
+HTML 태그안의 속성 데이터바인딩은 :어쩌구
+HTML 태그안의 내용 데이터바인딩은 {{어쩌구}}
+
+오늘의 5분숙제:
+6개상품 전부 알아서 진열해보셈
+
+원룸들 : [{},{},{},{},{},{}]
+둘째상품
+6개상품 전부 알아서 진열해보셈 v-for 쓰셈

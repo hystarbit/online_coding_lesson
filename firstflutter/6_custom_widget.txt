@@ -1,0 +1,87 @@
+쉬운 플러터 6강 : 중요한 커스텀 위젯 문법
+Custom Widget
+Q. 레이아옷용 위젯들이 너무 길다면?
+-> 한 단어로 (커스텀위벳으로) 깔끔하게 축약가능
+
+stless 탭키
+
+위젯들 한 단어로 축약하려면
+1. Class 작명
+2. return 옆에 축약할 레이아웃 넣기
+
+
+이런 긴 레이아웃을 이 단어로 축약한 것임
+
+(나만의 위젯만드는 문법임)
+
+class ShopItem extends StatelessWidget {
+  const ShopItem({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      child: Text('안녕'),
+    );
+  }
+}
+
+Q. 왜 저따구로 4줄 써야함?
+- 플러터만든 사람이 정했을 뿐
+
+궁금할까봐 문법설명
+
+Line 1. 커스텀 위젯은 class로 만듭니다
+변수, 함수 보관함임
+
+커스텀 위젯되려면 class안에 변수 함수 많이 넣어야 함
+
+그래서 이미 완성된 위젯 복사해서 class 만듭니다
+extends: 오른쪽 class 복사해주세요~
+StatelessWidget: 완벽한 위젯 복사품
+
+Line 2. class에 어떤 파라미터 넣을 수 있는지 정의부분임
+
+Line 4. class안에 build라는 함수 만드는 부분
+
+build 안의 return에 축약할 위젯 넣어야함
+
+ 
+@override : 
+복사문법 변수, 함수 복붙
+StatelessWidget: 여기도 build(){} 있으면 어쩔것
+(중복발생)
+
+Line3.@override는 내꺼먼저 적용하라는 뜻
+
+실은 변수, 함수 문법으로도 축약 가능
+
+성능상 이슈가 있을 수 있음
+
+변하지 않는 UI들은
+변수 함수로 축약해도 상관없음
+
+ShopItem() <- state관리가 힘덜아질수도
+
+아무거나 다 커스텀위젯화 X
+재사용 많은 UI들 O
+큰 페이지들 O
+
+앱에 보여줄 항목이 100개이면?
+위젯 많다고 해서 스크롤바 자동으로 생기지 않습니다
+
+ListView() 안에 넣으면 
+- 스크롤바 생김
+- 스크롤 위치 감시도 가능하고
+- 메모리 절약기능도 있고
+
+삭제기능
+유저가 보고 잇는 곳 ->
+오늘의 숙제1 : 이렇게 생긴 거 만들어오십시오
+전화 홍길동
+전화 홍길동
+전화 홍길동
+
+커스텀위젯으로 만들기
+전화 메세지 연락처
+
+

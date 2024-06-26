@@ -1,0 +1,31 @@
+React 기초 6강 : 
+Component로 HTML 깔끔하게 줄이는 법
+
+Modal창으로 띄우는 상세페이지
+Modal UI 디자인하기
+
+HTML을 한 단어로 줄여서 쓸 수 있는 방법:
+리엑트의 Component 문법
+
+Component 만드는 법
+1. 함수 만들고 이름 짓고
+2. 축약을 원하는 HTML 넣고
+3. 원하는 곳에 <함수명/>
+
+Component 유의사항
+1. 이름은 대괄호
+2. return() 안에 있는 건 태그 하나로 묶어야 함
+
+HTML 묶기
+<></>
+
+Component 만들어두면 관리가 편해짐
+
+어떤 걸 Componoent로 만드는게 좋을까
+- 반복출현하는 HTML 덩어리들
+- 자주 변경되는 HTML UI들
+- 다른 페이지 만들 때도 컴포넌트로 만듦
+
+Component 많이 만들면 단점:
+- state 쓸 때 복잡해짐
+(상위 component에서 만든 state 쓰려면 props 문법 이용해야함)

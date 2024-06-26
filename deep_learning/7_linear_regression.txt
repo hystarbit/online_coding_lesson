@@ -1,0 +1,35 @@
+ㄹㅇ쉬운 딥러닝 7강 : 
+ensorflow 2로 해보는 
+간단한 Linear Regression 선형회귀 예측
+
+텐서플로우에서는 딥러닝을 어떻게 하는것인가
+딥러닝으로 간단한 수학문제 풀어보기
+
+문제: 키와 신발사이즈는 어떤 관련이 있을가요?
+
+신발        ./ .  y = ax + b
+  |   o ./ . o   (신발 = a * 키 + b)   
+  | . /o o       a, b를 찾는게 목표
+  | /.           그럼 키를 알면 신발사이즈도 추론가능
+  |___________  
+            키
+
+문제: 키로 신발사이즈를 추론해보자
+
+a, b 경사하강법으로 구하기
+tf.keras.optimizers.Adam()
+
+Adam: gradient를 알아서 스마트하게 바꿔줌
+
+opt.minimize(손실함수, var_list=[a,b])
+
+var_list: 경사하강법으로 업데이트할 weight Variable 목록
+
+loss function 손실함수 만들기
+- mean squared error
+- binary cross entropy
+등 여러가지
+
+예측한 신발사이즈 = 키 * 1.52 + 1.62
+이건 딥러닝 원리 시범일 뿐
+실제 프로젝트는 더 쉬움

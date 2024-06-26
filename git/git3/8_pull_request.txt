@@ -1,0 +1,26 @@
+브랜치 만들어서 개발하고
+merge하는게 안정적
+
+github.com에서도 브랜치 생성가능
+브랜치 관리가능
+
+로컬저장소에서 브랜치 만들고 push해도 똑같음
+git branch smile
+
+아무튼 smile 브랜치 완성
+원격저장소로 올릴 수 있음
+
+Q. 브랜치 이름 중복되면?
+-알아서 중복피하셈
+
+원격저장소 브랜치 merge하고 싶으면?
+-github 안에서 하거나
+-로컬에서 해서 push하거나
+
+어디 잘짯나 보자
+pull request 이게 merge요청임
+
+conflict 발생하면 Resolve conflicts 눌러서 해결
+
+원격저장소도 똑같이
+브랜치 만들고 merge(pull request)가능

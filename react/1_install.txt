@@ -1,0 +1,30 @@
+React 기초 1강 : 리액트 설치와 셋팅법 (2022+ 스타일)
+
+1. Node.js 검색 후 최신버전 설치하셈
+맥이나 윈도우나 요즘은 개발환경 똑같음
+Q. 저는 Node.js 설치이미 되어 있는데요?
+-100% 에러남 최신버전으로 재설치ㄱㄱ
+2. Visual Studio Code 에디터 설치
+3. 코드 폴더 만들기
+4. 에디터에서 작업폴더 Open Folder 열기
+작업폴더명이 뜨면 성공
+5. 리엑트 프로젝트 생성은 터미널을 열고
+npx create-react-app 프로그램명 입력
+npx: 라이브러리 설치 도와주는 명령어
+     (nodejs 설치 잘되어있어야 이용가능)
+create-react-app: 리엑트 셋팅 다된 boilerplate 만들기 쉽게 도와주는 라이브러리
+blog: 프로젝트명
+6. 프로젝트명의 하위폴더를 다시 Open Folder해서 코딩 ㄱㄱ
+7. 코드짠걸 미리보기 띄우기 터미널 열어서 npm start 입력
+
+궁금증 해결시간
+nodejs 왜 설치했냐면 create-react-app 라이브러리 때문
+nodejs 설치하면 npm이라는 툴 이용가능
+npm으로 create-react-app 이용했음
+
+App.js -> index.html
+index.js에서 함
+node_modules: 라이브러리 모은 폴더
+public: static 파일 보관함
+src: 소스코드 보관함
+package.json: 설치한 라이브러리 목록

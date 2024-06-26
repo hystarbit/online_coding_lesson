@@ -1,0 +1,60 @@
+쉬운 플러터 3강 : 박스 잘그려야 앱 잘만듭니다
+Typography
+
+글자 디자인하는 법
+Text()는 style:안에 스타일넣을 수 있음
+style:TextStyle()
+
+색주는 법
+1. Colors.칼라명
+2. Color(0xffaaaaaa)
+3. Color.fromRGBO(r,g,b,opacity)
+
+어짜피 다음날 다 까먹음
+필요할 때 찾아써야함
+
+fontWeight: FontWeight.w700
+
+아이콘 디자인하는 법
+아이콘은 color, size가 끝임
+
+
+버튼 디자인하는 법
+TextButton()
+IconButton()
+ElevatedButton()
+버튼넣고 싶을 때 택1
+
+버튼엔 필히
+Child:
+onPressed:
+넣어야 잘보임
+
+AppBar 디자인하는 법
+AppBar() 안에 넣을 수 있는 것들
+titleP 왼쪽제목
+leading: 왼쪽에 넣을 아이콘
+actions: [우측아이콘들]
+
+오늘의 숙제 
+비슷하게 만들어오십시오
+Appbar: 금호동3가 v.   돋보기 메뉴 종 알림 O
+Body: 
+사진기사진 
+캐논 DSLR 100D (단렌즈, 충전기 16기가SD 포함) 
+성동구 행당동 끌올 10분전
+210,000원
+하트 4
+
+레이아웃 혼자서도 잘짜는 법
+1. 예시디자인 준비 (없으면 다른앱 베껴야)
+2. 예시화면에 네모그리기
+3. 바깥 네모부터 하나하나 위젯으로
+4. 마무리 디자인
+
+Continainer
+Row row
+Images Column
+       Column
+       Column
+       Column

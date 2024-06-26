@@ -1,0 +1,12 @@
+6_요즘은 복붙만 잘하면 HTML/CSS 디자인 끝 (Bootstrap 4)
+메인페이지를 좀 꾸며보자
+HTML/CSS 직접 하드코딩할 시간이 없기 때문에
+HTML/CSS 라이브러리를 이용해서 쉽게 만들자
+        
+Bootstrap 검색 후 방문
+최신버전 이용
+Bootstrap v4 이상은 IE11+
+Bootstrap v3 이상은 IE9+
+Bootstrap is HTML/CSS 라이브러리
+(HTML 쌩코딩 없이 UI개발 끝)
+원하는 UI 검색 후 예제코드 복붙하면 UI개발 끝

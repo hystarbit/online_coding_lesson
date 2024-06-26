@@ -1,0 +1,57 @@
+Firebase로 당근마켓 만들기 1 : Firebase 설치 개쉬움
+HTML 파일에 복붙하면 firebase 설치 끝이긴 한데..
+
+React, Vue 개발환경이면 이게 나음
+npm install firebase
+
+Firebase 호스팅도 받을거면
+지금부터 설명하는걸 따라합시다
+
+Q. 리엑트 필수라는데 why 알씀
+A. 문법 언제 다 설명함 10년걸림
+
+1. nodejs 최신버전 설치좀
+2. VScode 에디터 설치좀
+3. firebase console 들어가셈
+그리고 프로젝트 만들기
+
+4. 필요한 기능 고르기
+Athentication <- 회원가입기능 필요하면
+Firebase Database <- Database 필요하면
+
+asia-northeast3이 아마 서울임
+storage <- 사진저장소 필요하면
+hosting <- 여기서 호스팅까지 할거면
+
+5. 작업용 폴더 아무데나 만드셈
+그리고 제발 에디터로 오픈
+
+6. 터미널 열고 다음 입력
+npm install -g firebase-tools@9.12.1
+
+7. 터미널 열고 다음 입력
+firebase login
+firebase init
+그리고 질문답변 잘하셈
+
+firebase console에서 만든 프로젝트 선택
+
+Firebase 설치된 프로젝트 생성 끝
+firebase 8.X 쓸 것임
+firebase 9.X는 모듈식으로 용량 줄일 수 있음
+
+마지막으로 셋팅할거 있음
+프로젝트 설정코드가 필요함
+firebase console에서 설정누르셈
+Web 누르셈
+
+DB에 데이터입력해주세요~~
+
+html 파일 미리보기 띄우려면
+firebase serve
+
+docker run -d --name oracle-xe -p 1521:1521 -e ORACLE_PWD=pass container-registry.oracle.com/database/express:latest
+
+docker run -d --name oracle-xe -p 1521:1521 --platform linux/amd64 -e ORACLE_PWD=pass container-registry.oracle.com/database/express:latest
+
+docker run -d --name oracle-xe -p 1521:1521 -e ORACLE_PWD=pass container-registry.oracle.com/database/express:latest

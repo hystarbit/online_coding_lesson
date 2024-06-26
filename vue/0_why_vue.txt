@@ -1,0 +1,96 @@
+Vue 0강 : 카카오가 리액트냅두고 Vue 쓰는 이유
+
+Vue.js 이거 왜 쓰는지 알아야 배우죠?
+Vue.js 쓰는 이유는 
+Web-app 만들 때 씁니다
+
+Single Page Application
+Web-app
+
+새로고침도 안되고 아이 부드러워
+= web-app
+
+React Angular Vue
+굳이 이거 왜씀
+
+
+(속보) 카카오 프론트엔드에서 Vue, React 반반 쓴다
+(떼로 옴)
+상남자의 리엑트나 쓰지 왜 Vue씀
+1. 쉬움
+
+젤쉬움
+= 좆밥 사이트만들기만 가능?
+
+React = Angular = Vue
+지원하는 기능도 다 비슷하고
+scaling도 다 잘되고
+SSR도 다 되고
+문법만 다름
+
+이유 2. 코드짤 때 right way가 있음
+Q. <HTML>을 여러개 만들고 싶다
+React:                       Vue:
+{map}                        v-for
+forEach
+for for in for of
+컴포넌트 render() 바깥에서 할지
+안에서 쓸지
+
+Q. <HTML>을 조건부로 만들고 싶다
+React:                       Vue:
+tenary operator              v-if v-else
+&& ||
+if else
+enum
+... 등
+
+코드를 저따구로 짜네^0^
+
+이색기 코딩어디서배움
+
+먼저 스타일 통일좀합시다
+
+Vue는 방법이 하나입니다
+-특히 초보일수록 좋음
+-Vue 문법 몇개 외워주면 초보도 output 쉽게 냄
+
+자유로운 React 특)
+자바스트립트 실력 == 리액트 실력
+
+Vue도 React스럽게 자유도 높은 개발가능
+JSX
+render() function
+가능
+
+쓰는 이유 3. HTML 렌더링 빠름
+
+쓰는 이유 4. 업데이트 잘됨
+- Vue 3버전 쓸 것임
+
+(중요) 님들이 직접 써봐야 판단 가능
+남의 말 듣지 마셈
+
+근데 JavaScript 꼬꼬마면 Vue로 시작하셈 (강요)
+
+Vue 강의에서 배워볼 것:
+project-based 입니다
+문법만 배우면 노잼이니까
+- 부동산파는 사이트 
+(이건 다방.com)
+- 간단한 블로그
+- 인스타그램
+
+실은 허세용 보여주기식
+포트폴리오용 껍데기임
+
+강의 레벨:
+빡대가리여도 이해 가능
+그래도 JavaScript 기초는 알아야
+
+변수 자료형
+Array Object에 데이터입력, 출력하는 법
+function
+if else
+for 반복문
+HTML CSS 쪼금

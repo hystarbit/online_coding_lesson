@@ -1,0 +1,88 @@
+프론트엔드로 꿀빨던 시대 끝남
+고용보다 외주가 더 저렴한데?
+
+Client-side Rendering
+Server-side Rendering
+
+1. 서버사이드렌더링
+
+html을 서버에서 만드는 짓:
+Server-Side Rendering
+
+Client-Side Rendering: React, Vue
+
+1. 구글 검색노출 ▼ (되긴 하는데 오래걸림)
+2. 페이지 로딩속도 ▼
+
+Server-Side Rendering
+1. 구글 검색노출 ▲
+2. 페이지 로딩속도 ▲
+3. 원하는 곳에서는 client-side Rendering 가능 ▲
+
+useState
+state관리
+useEffect
+Ajax
+비동기
+props
+react-query
+redux
+....
+(프론트엔드 전문기술 별로 필요없음)
+
+2. Next.js 개발 쉬움
+
+(1시간컷)
+(검색 30분)
+
+3. Next.js 요약
+프론트엔드 + 백엔드
+React
+
+장점 더 있음
+
+클라이언트 사이드 렌더링 가능
+
+나는 자바스크립트 없는 빠른 페이지를 원함
+캐싱 쉬움
+최적화된 이미지
+
+4. 실은 비슷한거 개많음
+Gatsby, Remix, Nuxt, SVELTEKIT...
+(Next.js 관리하는 Vercel은 언플의 신임)
+
+단점
+예약파일 많음
+React미완성 기능
+언제 지원함?
+(결국 컴포넌트.js파일 개많아짐)
+
+websocket, webRTC는
+다른 nodejs 서버에서 만드세요
+
+그냥 HTML렌더링만 잘할뿐
+
+신버전으로 배워보자
+
+프로젝트1.
+문법학습용 쿠팡후레쉬
+
+프로젝트2.
+여러기능 있는 게시판같은거
+- DB기능
+- 글 수정삭제
+- 회원기능
+- 댓글
+- 이미지
+- 애니메이션
+- 캐싱
+- 클라우드 배포
+받아쓰기만 하면 응용력0임
+
+알아서 코드짜는 법 알려드립니다
+
+강의 레벨:
+HTML/CSS기초
+JavaScript 기초(var if function for array object)
+별 기대안함
+리애긑 모랄도 시작됨

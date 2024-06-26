@@ -1,0 +1,31 @@
+git clone
+코딩노예
+저도 돕겠습니다
+git push해드림
+
+근데 소스코드 어딨음?
+zip파일
+
+원격 저장소 복제는
+git clone 저장소주소
+git clone https://github.com/hystarbit/lesson.git
+
+팀원 깃헙아이디 등록해놔야 git push 가능
+
+다른 팀원이 최근 git push 했으면
+나는 git push 못하네?
+(git push 해줄 친구가 없음)
+
+사이트에서 직접 파일만들고
+commit 하나 생성해봅시다
+
+git pull부터 하쇼
+git pull https://github.com/hystarbit/lesson.git
+1. git pull할 때 브랜치명시가능
+git pull origin 브랜치명
+
+2. git pull은 git fetch+ git merge임
+git fetch:원격저장소 신규 commit 가져오세요
+
+한줄요약:
+git push전에 git pull부터 하쇼

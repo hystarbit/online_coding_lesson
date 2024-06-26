@@ -1,0 +1,43 @@
+쉬운 플러터 5강 : Flexible과 숙제 안해오면 때림
+Flexible
+
+숙제 잘했으면 앞부분만 듣고 끄셈
+Row()안에 박스 2개 넣었는데
+
+박스폭을 50%로 설정하려면?
+->Flexible()로 감싸야함
+
+Column 내의 박스들도
+Flexible로 높이 %로 쪼개기 가능
+
+Row()안에서
+박스 하나만 꽉 채우고 싶으면 Expended()
+
+Expanded(child:Container(color: Colors.blue)),
+Flex: 1 가진 Flexible 박스랑 똑같음
+
+박스폭을 %로 주고 싶으면 Flexible
+박스 하나 넓게 채우려면 Expended
+
+박스 디자인했는데 의도와 다르다면
+1. 사이즈가 이상해서 그럼
+2. 박스 위치가 이상해서 그럼
+DevTools 켜보면 알 수도
+
+Alt + 4
+맥은 아마 command + 4
+
+1. 네모 그리고
+2. 바깥 네모부터 만들기
+박스
+
+3. 디자인 알아서
+글자 스타일은?
+
+글자, 아이콘은 원래 좀 소심합니다
+
+폭을 %로 주면 됩니다
+
+
+
+

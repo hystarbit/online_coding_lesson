@@ -1,0 +1,43 @@
+저번시간 숙제:
+버튼누르면 사용자가 입력한 제목, 내용,가격 DB에 저장
+
+진짜 버튼누르면
+DB에 저장되나
+
+DB 저장 성공/실패시
+코드실행하려면
+db.collection('product').add(저장할거).then(()=>{
+    성공후에 실행할 코드
+    consol.log(result)
+    window.location.href='/index.html';
+}).catch((err)=>{
+    console.log(err)
+})
+
+DB 저장 성공시 저장결과도 출력 가능
+
+이미지는 Database에 저장 X
+
+이미지는 Storage에 저장 후
+저장된 위치(URL)를 Database에 저장
+
+Storage에 파일저장하려면
+
+Storage 다루는 문법 소환
+const storage = firebase.storage();
+
+Storage에 파일저장하려면
+3줄쓰고 시작하셈
+저장경로 정하는 부분
+var storageRef = storage.ref();
+var 저장할경로 = storageRef.child('image/'+'파일명');
+var 업로드작업 = 저장할경로.put(업로드한파일~~~);
+Storage에 파일저장하려면 접근 규칙 설정해줘야
+
+input에서 선택한 파일 찾는 법
+var file = document.querySelector('#image').files[0];
+
+apple 2명?
+file.name 원래 파일명
+
+Storage에 파일저장하려면 접근 규칙 설정해줘야

@@ -1,0 +1,43 @@
+쉽게 설명하는 Git 기초 2. git diff & 응 vscode 쓸거야
+숙제로 commit 5번 해오랬음
+
+소스 제어 버튼: VSCode 에디터는 git 가능 
+
+commit 전에
+파일 차이점 확인하는 것도 좋음
+
+commit 전에
+현재파일 vs 최근 commit 차이점 확인하는 것도 좋음
+
+
+git diff
+최근 commit vs 현재파일 차이점 보여줌
+
+git diff 커밋id
+
+git diff 커밋id1 커밋id2
+
+git log --all --oneline
+
+git difftool
+(Vim 에디터임)
+h j k l이 방향키임
+:q 아니면 :qa는 종료
+
+git difftool 커밋아이디
+현재파일 vs 특정커밋 비교가능
+
+git difftool 커밋아이디1 커밋아이디2
+특정커밋 vs 특정커밋 비교가능
+
+difftool 할 때 Vim 에디터 쓰기 싫으면
+git config --global diff.tool vscode
+git config --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
+
+git difftool도 약간 쓰레기임
+부가기능 
+git
+
+아무거나 설치해도 git diff 쉽게함
+
+평소에 짜던 코드에도 git 적용해봅니다

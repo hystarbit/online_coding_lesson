@@ -1,0 +1,58 @@
+쉬운 플러터 2강 : 가로세로 배치하는 법과 Scaffold
+복습1.사진/글/아이콘/박스 위젯 배워봄
+복습2.위젯안에 위젯넣기 가능
+구글
+MaterialApp()
+
+아이폰
+Cupertino()
+
+커스터마이징
+MaterialApp()
+구글물 빼는 작업하면 됨
+
+상중하로 나눠주는 Scafford() 위젯
+AppBar() 상단에들어갈 위젯
+Container() 중단
+BottomeAppBar(), 하단
+
+여러 위젯 가로로 배치하는 법
+Row(children: [])
+
+여러 위젯 세로로 배치하는 법
+Column(children: [])
+
+mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+CSS의 display: flex와 매우유사
+
+Row, Column 요소들 정렬하려면
+Row()의 mainAxis <->
+                 ^
+Row()의 crossAxis |
+                 v
+
+                     ^
+Column()의 mainAxis |
+                     v
+Column()의 crossAxis <->
+
+세로정렬하고 싶은데.. 뭐였지
+(빡대가리들은 생각금지 ctrl + space 누르셈)
+맥은 Ctl + space 이상한거 뜸
+-> Preference 메뉴에서
+Keymap 중 completion을 다른걸로 바꾸셈
+
+Q. 파라미터 우측에 뭐넣을지 까먹음
+1. 왼쪽에 있는걸 대문자로 써보든가
+2. 파라미터에 마우스올려보든가
+3. 당연히 검색해봐야
+
+오늘의숙제:
+Appbar: 앱임
+container: 안녕
+BottomAppbar : 전화버튼 메세지버튼 전화버튼
+
+아이콘이름 참고
+Icons.phone
+Icons.message
+Icons.contact_page

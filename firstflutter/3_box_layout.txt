@@ -1,0 +1,37 @@
+쉬운 플러터 3강 : 박스 잘그려야 앱 잘만듭니다
+Box layout
+appBar: AppBar(title: (Text('앱임')),
+앱의 제목
+
+오른쪽에 뭐채울지 까먹으면
+-구글찾거나
+-마우스올려보거나
+
+BottomAppBar 높이 조절은?
+
+Container 안에 Row하면 될듯
+
+모든 UI의 기원은 네모박스임
+박스디자인하는 법
+
+박스에 여백주는 법
+margin: EdgeInsets.All(20)
+
+박스에 일부 여백주는 법
+margin: EdgeInsets.fromLTRB(left, top, right, bottom)
+
+박스에 테두리주는 법
+decoration: BoxDecoration(
+  border: Border.all(color: Colors.black)
+),
+
+박스위치정렬
+body: Align(
+   alignment: Alignment.bottomCenter,
+   Child: Container(
+   )
+
+박스 width를 가로로 꽉차게?
+double.infinity
+
+

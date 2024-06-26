@@ -1,0 +1,71 @@
+(알아두면 개발팀장가능) 
+GitFlow vs Trunk-based 협업방식
+
+git branch어쩌구 저쩌구
+
+                  - commit2-1
+commit1 - commit2 - commit3
+
+프로젝트 커져도, 사람 많아도 branch, merge 깔끔하게 하고 싶으면
+GitFlow
+Github GitFlow
+Trunk-based 
+Gitlab Flow 
+
+GitFlow
+by Vincent Driessen
+1. main
+2. develop
+3. feature
+4. release
+5. hotfix
+
+던파 개발자
+1.0버전엔
+중요한 신긴으 많이 필요함
+
+GitFlow
+
+main v0.9 <-안전          유저들에게도 배포
+
+            release v1.0  출시전 테스트
+develop 복사본 <-신기능 
+
+feature/guild 신기능 개발해보고 잘되면 merge
+feature/friend
+
+feature/어쩌구 흔함
+
+develop에도 merge해야함
+
+GitFlow덕분에 갓겜됨
+돈복사 버그 갓겜 ㅋㅋㅋㅋ
+
+v1.0 hotfix 수정완료하고 합침
+점검보상상자1개
+
+장점: 안정적으로 버전별 배포가능
+단점: CI/CD 이런거 하는 곳은 안좋아함
+
+굳이 똑같이 따라할 필요 없음
+
+코드 내가 짰냐
+
+Trunk-based
+브랜치 하나만 잘 관리하자
+develop 브랜치 이런거 왜만드냐
+
+feature1 
+main
+feature2
+
+유저에게 배포
+
+Github Flow도 유사
+
+소스코드 한곳에만 있음 개꿀
+테스트 많이, 자주 해야함
+안정화된 프로젝트들이 잘씀
+
+Gitlab Flow같은 이상한것도 있음
+

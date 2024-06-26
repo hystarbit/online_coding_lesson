@@ -1,0 +1,80 @@
+TypeScript로 웹개발하려면 HTML 조지는법을 알아야
+TypeScript Dom Manuplation
+index.html 파일 필요
+<h4> 안의 클자를 바꿔보자
+
+제목.innerHTML = '반가워요';
+타입이 Element | null
+타입을 하나로 narrowing 하면 됩니다
+
+null
+let 제목 = document.getElementById('#title123');
+잘 찾으면 html object 자료남음
+
+<h4>안의 글자를 바꾸려면 narrowing 잘 하십시오
+
+많은거 보여주면 이상하게들 만족감을 느낌
+
+HTML 조작시 narrowing 방법 2개
+1. 제목 != null
+2. instanceof 연산자
+if (제목 instanceof Element) {
+   제목.innerHTML = '반가워요';
+}
+
+3. as로 사기치기
+let 제목 = document.getElementById('#title123') as Element;
+타입을 사기칠거면 타입스크립트 왜 씀
+
+4. 오브젝트에 붙이는 ?.
+1. 제목에 innerHTML이 있으면 출력해주고
+2. 없으면 undefined 뱉으셈
+(optional chaining)
+let 제목 = document.getElementById('#title123');
+if (제목?.innerHTML != undefined) {
+    제목.innerHTML = '반가워요';
+}
+
+5. 귀찮은 strict 모드 끄든가
+
+그냥 자바스크립트써도
+이렇게 코드짜면 안전하고 좋음
+
+<a> 태그의 href 속성내용을 바꿔보자
+
+let 링크 = document.querySelector('.link');
+if (링크 instanceof Element){
+    링크.href = 'https://kakao.com'
+}
+이거 오류 난다.
+if (링크 instanceof HTMLAnchorElement){
+    링크.href = 'https://kakao.com'
+}
+(별거없음)
+Element 타입
+상속
+HTMLAnchorElement 타입
+HTMLHeadingElement 타입
+HTMLButtonElement 타입
+
+HTMLAnchorElement 타입
+이 타입은
+href
+style
+class
+이런거 쓸 수 있어요~~
+object 타입정의 잘되어있음
+<button> 태그면 HTMLButtonElement
+<h1> 태그면 HTMLHeadingElement
+... <태그>마다 정해져있음
+
+타입스크립트에서
+eventListener 부착하는 법
+
+let 버튼 = document.querySelector('#button');
+버튼?.addEventListener('click',function(){
+
+})
+
+버튼에 addEventListener 가능하면 해주시고
+아니면 undefined 뱉으셈

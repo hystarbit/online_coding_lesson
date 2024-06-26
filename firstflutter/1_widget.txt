@@ -1,0 +1,63 @@
+쉬운 플러터 1강 : 기본 위젯 4개 알면 기초 끝
+analysis_options.yaml에 적을게 있음
+Rules: 부분에 4줄 추가
+Lint 잠깐 끄는 용도임
+(초보땐 쓸데없음)
+
+void main(){} 하단 다 지우셈
+
+stless 입력 후 탭키 눌러보셈
+
+메인페이지 셋팅은 끝
+
+void main() {
+  runApp(const MyApp());
+}
+앱 시작해주세요~
+앱 메인페이지 입력하면 됩니다
+
+엡 매인페이지 만드는 법임
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MatrialApp(
+
+    );
+  }
+}
+
+배울 내용: 앱에 디자인넣는 법
+Flutter에서 앱 디자인넣는 법:
+위젯 짜집기
+
+Q. 글자넣고 싶어요
+글자 위젯 넣으셈
+박스넣고 싶어요
+박스위젯 넣으셈
+
+글자넣고 싶으면
+Text('글내용')
+
+꼭 알아야할 위젯 4개
+이거 알면 플러터 끝임
+글자위젯
+이미지위젯
+아이콘위젯
+박스위젯
+
+1. 글자 넣을 땐 Text()
+2. 아이콘 넣을 땐 Icon(Icons.아이콘이름)
+3. 이미지 넣을 땐 Image.asset('경로')
+- 이미지 쓰겠다고 등록도 해야함
+- pup spec.yaml 파일안에 assets폴더 쓰겠다고 명시
+4. 네모박스 넣고 싶을 땐 Container()
+스타일줄 땐 (스타일명: 값)
+Flutter의 사이즈 단위는 LP임
+50LP = 1.2cm
+
+어디서부터 50 차지할지 몰라서 그럼
+
+내 자식의 위젯의 기준점을 중앙으로 설정해주는 Center()
+

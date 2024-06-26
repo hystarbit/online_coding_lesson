@@ -1,0 +1,105 @@
+Next.js 6강 
+client/server component
+(장바구니 페이지)
+뭔가 복잡함
+map으로 반복생성해도 좋을듯?
+
+<어쩌구/>
+길고 복잡한 html을
+한 단어로 축약하려면 component
+
+component 만드는 법
+1. function 작명(){}
+2. return(축약할 긴 HTML)
+3. <작명/> 사용
+
+더러운 html덩어리를
+한 단어로 축약해서 쓰려면
+Component 만들어서 쓰십쇼
+
+Q. 보여줄 상품목록이 1000개면?
+map 반복문 사용
+
+Q. 눈에 보이는거 전부 다
+component로 만들면 좋을듯?
+
+component단점:
+component끼리 데이터 공유 귀찮음
+
+재사용이 잦은 html 덩어리들을
+주로 component로 만드는게 좋음
+
+function 문법 쓰는 이유:
+1. 더러운 코드 한 단어로 축약
+2. 같은코드 재사용
+
+component 문법 쓰는 이유:
+1. 더러운 코드 한 단어로 축약
+2. 같은코드 재사용
+3. page.js만들 때
+
+Next.js컴포넌트는 종류가 2개임
+1. server component
+2. client component
+
+아무데나 대충 만든건 
+server component
+
+파일 맨 위에 'use client' 넣고 만든건 
+client component
+
+server component
+- html에 자바스크립트 기능넣기 불가능
+
+<h4 onClick={} className="title">장바구니</h4>
+이거 클릭시 코드실행해주고 싶다
+이런식으로 넣으면 error
+
+-useState, useEffect등 사용불가(몰라도됨)
+
+client component
+- html에 자바스크립트 기능넣기 가능
+-useState, useEffect등 사용가능
+
+Q. client component가 좋은거네?
+-맞음
+
+server component
+-로딩속도 빠름
+-검색엔진 노출 유리
+
+client component
+-로딩속도 느림 1(자바스크립트 많이 필요)
+-로딩속도 느림 2(hydration 필요)
+
+hydration:
+html 유저에게 보낸 후에
+자바스크립트로 html 다시 읽고 분석하는 일
+
+(추천)
+큰 페이지는 server component
+JS기능 필요한 곳만 client component
+<CleintComponent />
+
+일부 코드는 다른 파일로 분할하기도 합니다
+export default 변수/함수 해놔야함
+
+import 작명 from "./data.js";
+
+import 작명 from './../data.js';
+상위폴더이동
+
+./폴더명/data.js
+하위폴더이동
+
+export default는 파일마다 1회 사용가능
+
+변수 여러개 사용
+export{변수/함수명}
+export{age, name};
+import {age, name} from "./data.js";
+
+숙제해보고 지나갑시다
+
+
+

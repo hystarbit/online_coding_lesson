@@ -1,0 +1,66 @@
+Next.js 5강
+Image
+
+저번시간 숙제:
+상품명 3개 각각 넣기
+반복될 대마다 0,1,2..되는 변수?
+
+I: 반복문이 돌때마다 0,1,2
+
+map반복문 사용시
+Key = {유니크한 값} 넣으면 좋음
+
+일반 이미지 넣는 법
+<img src="경로"/>
+Alt = 설명
+
+최적화된 이미지로 넣을 수 잇음
++ lazy loading
++ 사이즈최적화
++ layout shift 방지
+이미지때문에 레이아웃 밀려남
+
+최적화된 이미지 넣으려면
+1. import Image from "next/image";
+2. <Image /> 사용
+3. 이미지를 import해서 경로넣어야함;
+
+src안에 require('이미지경로')이런거 써야함
+
+외부이미지는 width, height 속성 필요함
+<img src="https//s3.amazonaws.com/my-bucket/profile.png" 
+     width={500} height={400}
+     className="food-img"/>
+그리고 next.config.js셋팅 필요함
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 's3.amazonaws.com',
+                port: '',
+                pathname: '/my-bucket/**',
+            }
+        ],
+    },
+};
+
+export default nextConfig;
+(최적화는 보통 다 만든 후에 하는게 좋음)
+
+Q. 계속 food0.png만 보이는데요
+<img src={'/food'+i+'.png'} className="food-img"/>
+<img src={`/food${i}.png`} className="food-img"/>
+` : 백틱(Backtick)
+
+장바구니 페이지 만듭시다
+/cart로 접속하면
+장바구니 페이지 보여주고 싶다
+
+장바구니페이지
+상품1 /$40 / 1개
+상품2 /$40 / 1개
+상품3 /$40 / 1개
+
+

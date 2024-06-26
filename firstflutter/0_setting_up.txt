@@ -1,0 +1,59 @@
+쉬운 플러터 0강 : 플러터 설치 4-step (맥/윈도우)
+setting up
+
+Flutter 개발환경 셋팅
+1. Flutter SDK 다운
+2. Android Studio 설치
+3. 환경변수 등록
+4. 나머지 찌끄레기들
+
+1. Flutter SDK 다운
+2.8.0 버전 어쩌심
+찾기 좋은 곳에 압축 푸셈
+
+2. Android Studio 설치
+(m1 이런거 달린 맥북은 ARM 어쩌구버전)
+(참고)설치중 Virtual Device는 빼고 나중에 설치해도 됩니다
+
+2-1. plugin 메뉴에서 Flutter 플러그인 검색 후 설치
+atom oneDark Theme
+2-2. SDK Manager 눌러서
+Android SDK Command-line Tools 설치
+
+AMD Hyper어쩌구
+Intel HAXM 어쩌구버전
+혹시 없다고하면 일단 무시
+
+3. 윈도우 환경변수 등록은
+환경 변수 편집 검색ㄱㄱ
+아까 압축푼 flutter 안의 bin 폴더 경로 적어야함
+
+제 경로 그대로 따라치면 코딩인생 망함
+
+3. 맥북 환경변수 등록은
+터미널부터 오픈
+
+터미널이름이 zsh면
+touch~/.zshrc
+open~/.zshrc
+입력
+
+터미널이 bash면
+touch~/.bash_profile
+open~/.bash_profile
+입력
+
+텍스트 편집기 뜨면
+export PATH="$PATH:플러터폴더경로/bin"
+
+4. 나머지 하찮은 것들
+- 크롬브라우저 필요
+- 터미널 오픈해서 flutter doctor입력
+
+맥북은 Xcode, cocoapods 없다고 나올듯
+나중에 필요하면 하쇼
+
+(참고) AndroidStudio에 위대한 한글적으면 오타로 잡아주기도함
+해결은 강의하단
+
+미리보기 띄우고 싶으면 이거

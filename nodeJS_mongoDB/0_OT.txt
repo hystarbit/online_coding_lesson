@@ -1,0 +1,25 @@
+만들 것 :
+    할일 메모장
+    - 글목록 읽기 가능
+    - 글 발행
+    - 수정
+    - 삭제
+
+    + 회원기능 = 플랫폼/SNS
+    + 결제기능 = 소핑몰
+
+커리큘럼 요악
+Node.js
+NoSQL Database(MongoDB)
+DB에 데이터 저장/출력법
+서버 제작 (API)
++ 서버 배포, npm, bootstrap 등 ...
+
+사전에 알면 좋은 것들
+HTML/CSS 기초
+JavaScript 기초 문법
+(jQuery & Web UI)
+- 다른 프로그래밍 언어 경험이 있으면 프리패스
+if, for, function, var, 자료형(Array, Object)
+강의에선 어렵고 북잡한 문법 안씀
+(문법 잘 몰라도 눈치 좋으면 가능)

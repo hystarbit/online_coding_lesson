@@ -1,0 +1,61 @@
+git branch
+
+파일 복사본 만들어서 
+거기에 먼저 코드 짜보면 안심
+
+branch 기능 이용하면
+복사본 만들기 쉬움
+
+commit의 복사본
+
+쇼핑물 만드는 중인데
+쿠폰 기능 추가해야함
+
+복사본에 먼저 개발해보자
+branch에 먼저 개발해보자
+
+git branch 브랜치명
+git branch happy
+브랜치 생성해줌
+
+git switch 브랜치명
+git switch happy
+브랜치로 이동
+
+여긴 hpppy 브랜치
+
+                ->commit2-1 happy branch
+ commit1 -> commit2 main branch
+
+ 여긴 main 브랜치
+
+ happy, main 브랜치에서
+ commit 각각 여러번 해보쇼
+
+ (main브랜치임)
+
+ happy 브랜치 코드를
+ main 브랜치에 합치고 싶다
+
+ git merge happy
+                        a 파일 수정
+                     ->commit2-1->   happy branch
+ commit1 -> commit2 - commit3-> main branch 해피엔딩
+                       b 파일 수정
+
+                       a파일 1번줄 수정
+                     ->commit2-1->   happy branch
+ commit1 -> commit2 - commit3-> main branch  conflict엔딩
+                       a파일 1번줄 수정
+
+브랜치 둘 다 app.txt 1번줄 수정한다면?
+
+CONFLIC 해결법은
+1. 원하는 코드만 남기고
+2. git add 
+3. git commit
+
+브랜치 생성은 git branch 브랜치명
+브랜치 이동은 git switch 브랜치명
+브랜치 합치기는 기준 브랜치 이동 후 git merge 브랜치명
+충돌 해결은 코드고치고 git add&git commit

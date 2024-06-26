@@ -1,0 +1,21 @@
+2강 리엑트 기초 문법
+웹사이트 레이아웃 어떻게 만들죠?
+-HTML CSS 작성함
+React
+Next.js
+
+리엑트버전 HTML 특징 4개
+JSX
+
+1. return()안에 HTML 넣을 때
+1개 <태그>로 시작해서 끝나야함
+2. class넣고 싶으면 className
+(이제 css파일가서 class선언하면 될듯)
+메임페이지 레이아웃 만들어보자
+3. HTML안에 변수넣으려면 {}
+4. Style 속성 넣으려면
+style={{어쩌구:저쩌구}}
+
+object자료형
+Dash 기호 쓸수 없당
+

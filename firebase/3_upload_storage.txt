@@ -1,0 +1,57 @@
+오늘 할 일
+1. index.html에 상품진열
+2. firebase db에 데이터 저장하는 법
+
+강의하단에 있는 HTML CSS
+index.html에 복붙ㄱㄱ
+미리 main.css 만들고 index.html에 <link>해놨음
+
+database에 2개 저장해놨음
+그럼 <div> 저거 두번 복붙해야겠네(X)
+-> 100개면 100번 복붙할것임?
+
+database에 있던 상품 갯수만큼
+<div>를 생성해주세요~
+
+colleciton
+{상품명,가격..}
+{상품명,가격..}
+
+"<div>를 하나 만들어주세요~"
+안에 든게 5개면 안의 코드도 5회 반복됨
+
+<div>를 이쁘게 만들어서 저기에 붙여넣어주세요~
+
+JavaScript로 HTML 동적으로 만들기
+
+` 키를 이용하면 html을 깨지지 않고 담을수있음.
+` 키: window 자판 ~ 아래에 있음
+https://namu.wiki/w/%EC%9C%88%EB%8F%84%EC%9A%B0%20%ED%82%A4
+
+doc.data() 안에 상품정보가 들어있음
+
+그래서 오늘의 교훈
+자바스크립트를 잘해야...
+
+upload.html 만들자
+Bootstrap, jQuery, firebase설치
+(index.html)
+복붙후에 HTML에 상품목록만 좀 지워봄
+DB에서 데이터 꺼내는 코드도 지움
+
+상품명 가격 등 입력할 수 있는 폼만들기
+
+상품명, 글내용, 가격 database에 저장하기
+
+firestore database에 저장하는 법
+db.collection('product').doc('상품3').set({제목 : '변기' })
+
+firebase database에 저장하는 법 2
+db.collection('product').add({제목: '변기'})
+
+.doc().set()쓰면 문서이름 내가 결정가능
+.add()쓰면 자동으로 문서이름 부여됨
+
+오늘의 숙제:
+버튼투르면 사용자가 입력한
+상품명, 내용, 가격이 DB에 저장되게 만드셈

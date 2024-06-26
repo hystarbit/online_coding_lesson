@@ -1,0 +1,41 @@
+1강
+project_install
+개발환경 셋팅부터
+1. Nodejs검색 후 설치
+2. VSCode 에디터 설치
+3. 코드짤 작업폴더 생성
+4. 에디터로 작업폴더 오픈
+
+Next.js 프로젝트 생성은
+터미널 열고
+
+npx create-next-app@latest --experimental-app
+▲ 변동가능(강의하단 참고)
+
+에디터로 오픈해서 코드짭시다
+1. Package.json 열어서
+2. 이거 버전 수정 
+Next: 13.2.4로 수정
+3. npm install
+
+page.js 메인페이지 (index.js)
+React문법써야함
+
+New Terminal
+
+layout.js <head> 상단메뉴 등
+page.js
+globals.css (모든 페이지에 적용할 스타일)
+xxx.module.css(특정 페이지에만 적용가능)
+
+Api 폴더는 서버기능 만드는 곳
+Node modules: 설치한 라이브러리 보관해줌
+public: 이미지 등 소스코드 외의 파일들 보관용
+
+package.json 
+설치한 라이브러리 자동으로 보여줌
+터미널에서 쓸 수 있는 명령어
+
+page.js(index.js)다 지우고 시작함.
+
+미리보기는 npm run dev

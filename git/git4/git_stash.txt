@@ -1,0 +1,29 @@
+git stash
+
+let b = 2;
+잠깐 잘라내서 보관하고 싶음
+git stash
+
+보관된 코드 목록 조히는 
+git stash list
+
+최근 commit과의 차이점을 전부 보관해줌
+
+staging 안해놓은 새로운 파일은 stash 안될 수도
+메모도 적고 싶으면
+git stash save '메모'
+
+코드 다시 불러오려면 git stash pop
+(가장 최근것부터 불러옴)
+
+뭐하러 git stash함?
+주석처리?
+주석처리 안에 문구도 나중에 commit할 때 반영됨
+이런거 commit시 숨길 때 git stash 유용
+
+branch 만들어서 거기 작성해도 비슷할듯
+
+stash 1개 삭제는 git stash drop 번호
+전부 삭제ㅔ는 git stash clear
+
+git stash drop 0

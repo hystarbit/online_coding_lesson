@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4 id="test">안녕하세요</h4>
+    <!--jQuery 요즘 안쓴다
+    React 없으면 jQuery기 왕
+    jQuery로 개발된 사이트 1조 1억개
+    그래서 안 배울 순 없음-->
+    <!--jQuery 설치 위치(중요)
+    - <body> 끝나기 전 ㅊㅊ
+    - 그냥 모든 JS들은 여기 넣으셈-->
+    <script 
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+    crossorigin="anonymous"></script>
+    <script>
+        // document.querySelector('#test')
+        // document.getElementById('test').innerHTML = '???';
+        // jQuery로 HTML 변경하는 법
+        // $('CSS셀렉터').어쩌구();
+        //$('#test').html('안녕');
+        //$('#test').html();
+        $('#test').text('안녕');
+        $('#test').css('color','red');
+        //$('#test').attr('src','dsddd.jpg');
+        $('#test').addClass('yellow-bg');
+    </script>
+
+</body>
+
+</html>

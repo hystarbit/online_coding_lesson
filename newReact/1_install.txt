@@ -1,0 +1,71 @@
+2022 new 리액트 1강 : 
+리액트 뽕주입과 설치법
+React
+react-router-dom 
+redux/toolkit
+styled-components
+...
+프로젝트:
+1. 블로그
+2. 쇼핑몰
+
+1. Single Page Application 만들 수 있음
+2. component로 html 재사용 편리
+3. 데이터가 html에 자동 반영됨
+
+React, Angular, Svelte, Vue, Preact ... 개많음
+사용량 1위
+React Native
+리액트 문법으로 모바일 앱개발 가능
+
+제 코드 따라치세요~(나중에 혼자할 때 막막함)
+리엑트로 알아서 코드짜는 법 알려줌
+
+HTML/CSS 기초지식 필요
+JavaScript 기초지식 필요
+var if function for [] {}알면 굿(설명은 합니다)
+
+html css javascript 도와주는 도구들임
+React, Angular, Svelte, Vue, Preact
+
+개발환경셋팅 & 리액트프로젝트생성
+
+개발환경 셋팅
+1. Node.js 검색해서 설치
+2. Visual Studio Code 에디터 설치
+3. 코드 폴더 만들기
+4. 에디터에서 작업폴더 Open Folder 열기
+작업폴더명이 뜨면 성공
+
+프로젝트 생성은 
+1. 작업용폴더 만들고 shift+우클릭
+PowerShell/터미널 열기 누름
+2. 열린 터미널에 npx create-react-app 프로그램명 입력
+npx: 라이브러리 설치 도와주는 명령어
+     (nodejs 설치 잘되어있어야 이용가능)
+create-react-app: 리엑트 셋팅 다된 boilerplate 만들기 쉽게 도와주는 라이브러리
+blog: 프로젝트명
+3. 에디터에서 File-Open Folder로 blog 폴더 오픈
+4. 미리보기 띄우기 터미널에서 npm start 입력
+
+방금 뭐했는지 설명시간
+html 파일에 직접 리액트 설치해도 되는데...(코딩포기자됨)
+Create React App 구글에서 찾아보셈
+
+이거 쓰려면 npm이라는거 필요함
+(nodejs 설치하면 딸려옴)
+
+npx create-react-app my-app
+(프로젝트 생성해주는 명령어 제공)
+
+프로젝트 파일들 설명
+node_modules: 라이브러리 코드 보관함
+public: static 파일 모아놓는 곳
+src폴더: 코드 짜는 곳
+
+js 파일에 html 짜도 되네?
+App.js -> index.html
+<div>
+index.js에서 함
+
+package.json: 프로젝트정보

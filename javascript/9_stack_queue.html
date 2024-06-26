@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(1+1);
+        setTimeout(function(){console.log(2+2),1000});
+        console.log(3+3);
+
+        // Heap
+        // Stack
+        // 남들 코드 실행해주는 곳임(특징: 하나임)
+        // 그래서 자바스크립트는 보통 single threaded
+
+        // 대기실 Queue
+        // 대기실 보내는 코드들: Ajax 요청 코드, 이벤트리스너, setTimeout 등
+        // Stack이 비었을 때만 올려보냄
+
+        // 오늘의 교훈
+        // 1. stack 바쁘게 하지 말자
+        // 2. queue 바쁘게 하지 말자
+
+        // 자바스크립트는 동기적으로 처리된다
+        // 한번에 한줄 순서대로 ㄱㄱ
+
+        // 자바스크립트는 가끔 비동기적인 처리도 가능
+        // - setTimeout, 이벤트리스너, ajax함수
+
+    </script>
+</body>
+</html>

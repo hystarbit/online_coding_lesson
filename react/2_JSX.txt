@@ -1,0 +1,15 @@
+블로그 navbar 만들기
+1. 태그에 class를 주고 싶으면?
+<div className="클래스명"></div>
+
+2. (가장 큰 장점)
+리엑트에서 데이터 바인딩 쉽게하는 법
+Angualr, Vue도 가능
+데이터 바인딩: 데이터를 HTML에 꽂아넣는 것
+src, id, href 등의 것에도 {변수명, 함수 등}
+상상하는 모든 곳에 {}로 변수 집어넣기 가능
+
+3. JSX에서 style 속성 집어넣을 때
+style = {object 자료형으로 만든 스타일}
+camelCase 작명관습에 따라 속성명을 바꿔주셈
+

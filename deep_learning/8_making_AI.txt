@@ -1,0 +1,183 @@
+ㄹㅇ쉬운 실용 딥러닝 8강 : 
+대학 합격 예측 AI 만들기 (풀버전)
+
+대학원 합격 예측 프로젝트
+- Keras로 딥러닝 모델만들기
+
+admit gre  gpa rank
+    0 380 3.21    3
+    1 660 3.67    3
+    1 800    4    1
+    1 640 3.19    4
+    0 520 2.33    4
+    1 760    3    2
+    1 560 2.98    1
+    0 400 3.08    2
+    1 540 3.39    3
+    0 700 3.92    2
+    1 750  3.6    4
+    0 440 3.22    1
+
+붙을까요? x
+붙을 확률구하기 O
+
+파이썬 파일과 같은 폴더에
+csv 데이터파일 준비
+
+텐서플로우 안의 keras 쓰시면 딥러닝이 쉬워집니다.
+keras 안쓰면
+w = tf.Variable() 이거부터 노가다해야함.
+
+1. 딥러닝 model 디자인하기
+딥러닝 모델
+tf.keras.models.Sequential([])
+Sequential쓰면 신경망 레이어들 쉽게 만들어줌
+
+model = tf.keras.models.Sequential([
+    tf.keras.layers.Dense(64),
+    tf.keras.layers.Dense(128),
+    tf.keras.layers.Dense(1),
+])
+
+hidden layer : tf.keras.layers.Dense()
+tf.keras.layers.Dense(64)
+64: 레이어 개수
+tf.keras.layers.Dense(1)
+마지막 노드는 1개: 출력 레이어
+
+레이어에 activation function 넣기
+sigmoid
+tanh
+relu
+softmax
+leakyRelu
+
+마지막레이터는 예측결과를 뱉어야함
+예측결과: 0~1사이의 확률
+0~1사이의 확률을 뱉고싶으면 sigmoidㄱㄱ
+sigmoid
+σ(z) = 1 / (1+e^(-z))
+       _- (1)       
+      /
+     /
+(0)_-
+
+마지막 출력결과가 0.9 = 입락확률 90%
+마지막 출력결과가 0.2 = 입락확률 20%
+
+2. model compile하기
+model.compile(optimizer=???, loss=???, metrics=['accuracy'])
+
+optimizer
+새로운 w1 <= w1 - α(δE/δw1)
+optimizer는 α값(learning rate)을 알맞게 조정해줌
+
+optimizer목록
+adam
+AdaGrad
+AdaDelta
+RMSProp
+sgd 등
+
+loss function
+binary_crossentropy
+-(1/n)Σ[ylog(y^) +(1 - y)log(1-y^)]
+결과가 0과 1사이의 분류/확률문제에서 씀
+
+metrics
+모델을 평가할 때 어떤 요소로 평가할 지 쓰는 곳
+
+3. model 학습(fit)시키기
+model.fit(x데이터, y데이터,epochs)
+x데이터: 학습 데이터
+ex. gre gpa rank
+y데이터: 실제정답
+epochs: 학습 횟수
+
+x데이터: 정답예측에 필요한 인풋
+y데이터: 정답
+
+이런식으로 코딩할 것
+[ [380,3.21,3], [660,3.67,3], [], [] ] 인풋
+x데이터 이렇게 만들어야함
+x데이터 = [[학생1데이터], [학생2데이터] ...]
+[[0], [1], [1], [1] ..] 정답
+y = [정답1, 정답2, 정답3...]
+
+데이터파일 열기
+import pandas as pd
+pandas 라이브러리를 앞으로 pd로 쓰겠다~
+파이썬으로 엑셀처럼 데이터 다루고싶을 때 씀
+
+pd.read_csv()
+.csv 형식 파일 읽겠소
+
+빈부분은 
+평균값을 넣거나
+행을 삭제하거나
+
+데이터 전처리하기
+data.dropna()
+dropna()는 NaN/빈값있는 행을 제거해줌
+
+data.filna(100) 
+빈값을 채워줌
+
+- 유용한 pandas 방법들
+data['gpa']
+data['gpa'].min()
+data['gre'].min()
+data['gre'].max()
+data['gre'].count()
+
+y값 입력값 만들기 (일명 label)
+이렇게 만들어야 함
+y = [정답1, 정답2, 정답3..]
+
+x 입력값 만들기 
+x = [[데이터1], [데이터2], [데이터3]]
+
+dataframe: pandas로 연 데이터
+
+for i, rows in data.iterrows():
+data라는 데이터프레임을 가로 한줄씩 출력해주라
+변수 2개까지 생성가능
+
+우리가 원하는 형태
+[380,3.21,3]
+
+for i, rows in data.iterrows():
+    #print(rows)
+    print(rows['gre'], rows['gpa'], rows['rank'])
+
+x데이터  = []
+차례로 여기에 집어넣으셈
+
+[380,3.21,3]
+[rows['gre'], rows['gpa'], rows['gpa']]
+x데이터.append([rows['gre'], rows['gpa'], rows['rank']])
+
+- numpy Array
+- tf tensor
+
+일반 리스트를 numpy array로 변환하기
+(그래야 fit에 집어넣기 가능)
+import numpy as np
+다차원 리스트, 행렬 만들 때 씁니다.
+
+학습시킨 모델로 예측해보기
+제가 GRE 성적이 700 학점 3.7 Rank4 제 합격확률은요?
+아까 만든 model로 y값 예측해주세요~
+model.predict()
+예측은 model.predict(테스트해볼x데이터)
+
+이게 딥러닝 AI 만들고싶으면 해야할 일입니다
+1. 모델만들고
+2. 데이터집어넣고 학습
+3. 새로운 데이터 예측
+
++ 데이터전처리
++ 모델튜닝
+
+딥러닝학습은 연구과정입니다
+실험이 매우 중요

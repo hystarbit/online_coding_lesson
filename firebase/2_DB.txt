@@ -1,0 +1,65 @@
+미리보기 띄우고 시작합니다
+-folder open 안한것임
+
+Bootstrap 설치함
+홈페이지에서 Get started
+
+Bootstrap 설치합니다
+제공하는 css, js 파일을 HTML에 넣으면 끝
+
+jQuery 설치합시다
+jQuery cdn 검색하면 나옴
+minified 버전 js파일을 HTML로 복붙
+
+상단메뉴 Navbar 만들기
+Navbar 검색해서 맘에 드는거 복붙
+
+Firebase 콘솔 ㄱㄱ
+Cloud Firestore
+회원정보 게시물 댓글 이런거 저장할 곳임
+흔한 데이터베이스 생김새
+
+SQL 문법 쓰는 관계형 데이터베이스라고 부름
+우리가 쓸건 NoSQL 데이터베이스임
+대충 막 자유롭게 저장가능
+
+컬렉션
+collection(폴더)
+
+product라는 폴드 만들었음
+상품1
+상품2
+상품3..
+
+상품1
+작성자: 홍길동
+상품명: 면도기
+
+상품1이라는 document
+(object처럼 데이터 저장)
+
+Firebase 데이터베이스 저장방식
+collection(폴더) - product
+document(파일) - 상품1
+document(파일) - 상품2
+
+Database에서 데이터 가져오기
+Database 읽기 권한 설정 안해두면 이럼
+Firestore 규칙탭ㄱㄱ
+누가 Database에 접근가능한지
+똑같이 적으면 됩니다 끝
+
+collection에 있는 모든 문서 꺼내려면
+
+ async function getProducts() {
+      const 결과 = await getDocs(collection(db, 'product'));
+      //const querySnapshot = getDocs(collection(db, 'product'));
+      console.log(결과);
+      결과.forEach((doc) => {
+        console.log(`${doc.id} => ${JSON.stringify(doc.data())}`);
+      });
+    }
+
+    getProducts();
+
+    여긴 document에 대한 데이터를 얻고 싶다.

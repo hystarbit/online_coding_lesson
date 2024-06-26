@@ -1,0 +1,85 @@
+ 8 분🌙
+다양한 git merge 방법 (3-way, fast-forward, squash, rebase)
+
+case1. 각 브랜치에 신규 commit이 있는 경우
+일반적으로 발행되는 merge , 3-way merge
+        commit 2-1         새로운 브랜치
+commit1 commit2 commit3 commit4main 브랜치
+
+
+case2. 기준 브랜치에 신규 commit이 없는 경우
+                 commit2-1 commit2-2 새로운 브랜치 니 이름은 이제 main 브랜치여
+commit1 commit2 main branch
+fast-forward merge
+싫으면 git merge --no-ff 브랜치명
+
+(참고)브랜치 합쳐도 남아있음
+
+merge 완료된 브랜치 삭제는
+git branch -d 브랜치명
+
+merge 안한 브랜치 삭제는 
+git branch -D 브랜치명
+
+case3. git rebase & merge
+3-way merge
+        commit2-1 commit2-2 <-이걸
+commit1 commit2 commit3  commit4<-여기에 합치려면
+
+rebase&fast-forward merge
+                    commit2-1 commit2-2 <-이걸
+commit1 commit2 commit3  commit4<-여기에 합치려면
+rebase 쓰는 이유: 브랜치 없이도 코드 잘짜는 고수같음
+3-way merge는 나중에 git log 출력 때 복잡해보임
+간단하고 짧은 브랜치들은 이거 쓰면 깔끔해보임
+
+rebase 단점: conflict 엔딩 많이 남
+
+일반 merge하고 싶으면
+1. 중심 브랜치로 이동해서
+2. git merge 새로운 브랜치명
+
+rebase & merge하고 싶으면
+1. 새로운 브랜치로 이동해서
+2. git rebase 중심브랜치명
+3. 중심브랜치로 이동해서
+4. git merge 새로운브랜치명
+
+따라치면 이해안됩니다
+방법 알려드렸으니 직접해보십쇼
+
+case 4. squash and merge
+3-way merge많이 하면
+나중에 더러워집니다.
+
+main 브랜치 commit 내역 출력하면
+합쳐진 브랜치의 commit 내역(쓸데없음)
+
+main 브랜치 로그만 보고싶어도 쓸데업이 예도 나옴
+
+rebase
+squash and merge
+
+
+case 4. squash and merge 하면
+git merge --squash 새브랜치
+        commit2-1 commit2-2 <-이걸
+
+commit1-> commit2 ->commit3 -> commit4<-여기에 합치려면
+
+3-way merge
+fast-forward merge
+rebase
+squash & merge
+맘대로 원하는거 쓰쇼
+
+코딩노예
+
+XX팀 branching/merge가이드
+-안중요한 브랜치는 squash
+-feature/develop 브랜치는 3-way merge
+
+오늘의 숙제:
+1. 브랜치 새로 만들어서 squash & merge 해보기
+2. 브랜치 새로 만들어서 rebase 해보기
+3. 다 쓴 브랜치 삭제해보기
